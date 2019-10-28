@@ -56,7 +56,7 @@
 			text-align: center;
 		}
 	</style>
-	<title>科學少女222222</title>
+	<title>科學少女xxxxxxxxxxxxxxx</title>
 	<!-- - -->
     <script type="text/javascript">
         jQuery(document).ready(function($) {
