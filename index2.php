@@ -55,6 +55,10 @@
 			padding: 15px;
 			text-align: center;
 		}
+		div.aa{
+					display: block;
+					padding: 2%;
+		}
 	</style>
 	<title>科學少女xxxxxxxxxxxxxxx</title>
 	<!-- - -->
@@ -69,8 +73,9 @@
     <!-- -->
 </head>
 <body>
+	<div class="aa">
 	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-light">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark navbar-dark ">
 				<div class="container-fluid">
 					<div class="navbar-brand">
 						<img src="logo.png" width="50" height="30">
@@ -109,10 +114,11 @@
 				</div>
 			</nav>
 		</div>
+	</div>
 	<div class="our-partners">	
 			<div class="container" id="event">
 				<h3>最新活動</h3>
-		        <div >據哆啦A夢日本電影官網的消息，《電影哆啦A夢：大雄的新恐龍》已定檔 2020 年 3 月 6 日（星期五）上映。而這是繼電影哆啦A夢在日本再次由《月球探測（險）記》的周六上映，恢復為以往的週五上映慣例（即 3 月初的週五上映哆啦A夢電影）。
+		        <div >	據哆啦A夢日本電影官網的消息，《電影哆啦A夢：大雄的新恐龍》已定檔 2020 年 3 月 6 日（星期五）上映。而這是繼電影哆啦A夢在日本再次由《月球探測（險）記》的周六上映，恢復為以往的週五上映慣例（即 3 月初的週五上映哆啦A夢電影）。
 				</div>
 				<div class="clearfix"></div>
 			</div>	
