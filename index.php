@@ -55,13 +55,18 @@
 			padding: 15px;
 			text-align: center;
 		}
+<<<<<<< HEAD
 		div.title_line{
+=======
+		div.aa{
+>>>>>>> 3d88053fa9461813876bc68a48634a4ef620bace
 					display: block;
 					padding: 2%;
 		}
 	</style>
 	<title>科學少女xxxxxxxxxxxxxxx</title>
 	<!-- - -->
+<<<<<<< HEAD
     <script >
         $(document).ready(function() {
             $("a.nav-link").click(function(){		
@@ -71,20 +76,35 @@
 				$('html,body').animate({
 					scrollTop: $(this.hash).offset().top-75
 				});
+=======
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){		
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+>>>>>>> 3d88053fa9461813876bc68a48634a4ef620bace
             });
         });
     </script>
     <!-- -->
 </head>
 <body>
+<<<<<<< HEAD
 	<div class="title_line">
+=======
+	<div class="aa">
+>>>>>>> 3d88053fa9461813876bc68a48634a4ef620bace
 	<div class="container">
 		<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark navbar-dark ">
 				<div class="container-fluid">
 					<div class="navbar-brand">
+<<<<<<< HEAD
 						<a href="http://localhost/science_teenage_girl/index2.php">
 						<img src="logo.png" alt="go to index" width="60" height="55">
 						</a>
+=======
+						<img src="logo.png" width="50" height="30">
+>>>>>>> 3d88053fa9461813876bc68a48634a4ef620bace
 					</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -99,7 +119,11 @@
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#cast">人物介紹</a>
+<<<<<<< HEAD
 							</li>   
+=======
+							</li>
+>>>>>>> 3d88053fa9461813876bc68a48634a4ef620bace
 							<li class="nav-item">
 								<a class="nav-link" href="#designTeam">主創團隊</a>
 							</li>
@@ -123,7 +147,11 @@
 	</div>
 	<div class="our-partners">	
 			<div class="container" id="event">
+<<<<<<< HEAD
 				<h3 >最新活動</h3>
+=======
+				<h3>最新活動</h3>
+>>>>>>> 3d88053fa9461813876bc68a48634a4ef620bace
 		        <div >	據哆啦A夢日本電影官網的消息，《電影哆啦A夢：大雄的新恐龍》已定檔 2020 年 3 月 6 日（星期五）上映。而這是繼電影哆啦A夢在日本再次由《月球探測（險）記》的周六上映，恢復為以往的週五上映慣例（即 3 月初的週五上映哆啦A夢電影）。
 				</div>
 				<div class="clearfix"></div>
