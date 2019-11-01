@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -47,10 +46,6 @@
 			width: 100%;
 			height: auto;
 		}
-		img.img{
-			width:100%;
-			height:100%;
-		}
 		div.desc {
 			padding: 15px;
 			text-align: center;
@@ -65,14 +60,44 @@
     <script >
         $(document).ready(function() {
             $("a.nav-link").click(function(){		
-                // event.preventDefault();
-                //alert($(this.hash).offset().top);
-				//$('html,body').animate(scrollTop(this.hash),1000);
 				$('html,body').animate({
 					scrollTop: $(this.hash).offset().top-75
 				});
             });
         });
+        // 循环轮播到某个特定的帧 
+		$(function(){
+		$(".slide-0").click(function(){
+			$("#carousel").carousel(0);
+		});
+		$(".slide-1").click(function(){
+			$("#carousel").carousel(1);
+		});
+		$(".slide-2").click(function(){
+			$("#carousel").carousel(2);
+		});
+		$(".slide-3").click(function(){
+			$("#carousel").carousel(3);
+		});	
+		$(".slide-4").click(function(){
+			$("#carousel").carousel(4);
+		});
+		$(".slide-5").click(function(){
+			$("#carousel").carousel(5);
+		});
+		$(".slide-6").click(function(){
+			$("#carousel").carousel(6);
+		});
+		$(".slide-7").click(function(){
+			$("#carousel").carousel(7);
+		});	
+		$(".slide-8").click(function(){
+			$("#carousel").carousel(8);
+		});
+		$(".slide-9").click(function(){
+			$("#carousel").carousel(9);
+		});
+		});
     </script>
     <!-- -->
 </head>
@@ -107,10 +132,10 @@
 								<a class="nav-link" href="#photos">精彩劇照</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#pictureBook">音樂繪本</a>
+								<a class="nav-link" href="pictureBook.php" target="_blank">音樂繪本</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#movieNovel">電影小說</a>
+								<a class="nav-link" href="movieNovel.php" target="_blank">電影小說</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#event">最新活動</a>
@@ -188,163 +213,134 @@
 	<div class="our-partners">
 		<div class="container" id="photos">
 			<h3>精彩劇照</h3>           
-				<div id="carousel" class="carousel slide" data-ride="carousel">
-				<!-- 照片數 -->
-					<ul class="carousel-indicators">
-						<li data-target="#carousel" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel" data-slide-to="1"></li>
-						<li data-target="#carousel" data-slide-to="2"></li>
-						<li data-target="#carousel" data-slide-to="3"></li>
-					</ul>
-				<!-- 幻燈片 -->
-					<div >
-						<div class="carousel-item active">
-							<img src="image/pic0.jpg" class="img">
-						</div>
-						<div class="carousel-item">
-							<img src="image/pic1.jpg" class="img">
-						</div>
-						<div class="carousel-item">
-							<img src="image/pic2.jpg" class="img">
-						</div>
-						<div class="carousel-item">
-							<img src="image/pic3.jpg" class="img">
-						</div>
+			<div id="carousel" class="carousel slide" data-ride="carousel">
+			<!-- 照片數 -->
+				<ul class="carousel-indicators">
+					<li data-target="#carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+					<li data-target="#carousel" data-slide-to="2"></li>
+					<li data-target="#carousel" data-slide-to="3"></li>
+					<li data-target="#carousel" data-slide-to="4"></li>
+					<li data-target="#carousel" data-slide-to="5"></li>
+					<li data-target="#carousel" data-slide-to="6"></li>
+					<li data-target="#carousel" data-slide-to="7"></li>
+					<li data-target="#carousel" data-slide-to="8"></li>
+					<li data-target="#carousel" data-slide-to="9"></li>		
+				</ul>
+			<!-- 幻燈片 -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="image/pic0.jpg">
 					</div>
-				<!-- 左右切換-->
-					<a class="carousel-control-prev" href="#carousel" data-slide="prev">
-						<span class="carousel-control-prev-icon"></span>
-					</a>
-					<a class="carousel-control-next" href="#carousel" data-slide="next">
-						<span class="carousel-control-next-icon"></span>
-					</a>
-				</div>
-
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic0.jpg">
-						<img src="image/pic0.jpg" alt="圖片描述">
-						</a>
-						<div class="desc">精彩劇照1</div>
+					<div class="carousel-item">
+						<img src="image/pic1.jpg">
 					</div>
-				</div>
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic1.jpg">
-						<img src="image/pic1.jpg" alt="圖片描述">
-						</a>
-						<div class="desc">精彩劇照2</div>
+					<div class="carousel-item">
+						<img src="image/pic2.jpg">
 					</div>
-				</div>
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic2.jpg">
-						<img src="image/pic2.jpg" alt="圖片描述">
-						</a>
-						<div class="desc">精彩劇照3</div>
+					<div class="carousel-item">
+						<img src="image/pic3.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="image/pic4.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="image/pic5.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="image/pic6.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="image/pic7.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="image/pic8.jpg">
+					</div>
+					<div class="carousel-item">
+						<img src="image/pic9.jpg">
 					</div>
 				</div>
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic3.jpg">
-						<img src="image/pic3.jpg" alt="圖片描述">
-						</a>
-						<div class="desc">精彩劇照4</div>
-					</div>
-				</div>
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic4.jpg">
-						<img src="image/pic4.jpg" alt="圖片描述">
-						</a>
-						<div class="desc">精彩劇照5</div>
-					</div>
-				</div>
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic5.jpg">
-						<img src="image/pic5.jpg" alt="圖片描述">
-						</a>
-						<div class="desc">精彩劇照6</div>
-					</div>
-				</div>	
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic6.jpg">
-						<img src="image/pic6.jpg" alt="圖片描述">
-						</a>
-						<div class="desc">幕後花絮1</div>
-					</div>
-				</div>
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic7.jpg">
-						<img src="image/pic7.jpg" alt="圖片描述">
-						</a>
-						<div class="desc">幕後花絮2</div>
-					</div>
-				</div>
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic8.jpg">
-						<img src="image/pic8.jpg" alt="圖片描述">
-						</a>
-						<div class="desc">幕後花絮3</div>
-					</div>
-				</div>
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic9.jpg">
-						<img src="image/pic9.jpg" alt="圖片描述">
-						</a>
-						<div class="desc">幕後花絮4</div>
-					</div>
-				</div>
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic10.jpg">
-						<img src="image/pic10.jpg" alt="圖片描述" width="300" height="200">
-						</a>
-						<div class="desc">幕後花絮5</div>
-					</div>
-				</div>
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic11.jpg">
-						<img src="image/pic11.jpg" alt="圖片描述">
-						</a>
-						<div class="desc">幕後花絮6</div>
-					</div>
-				</div>
-				<div class="responsive">
-					<div class="img">
-						<a target="_blank" href="image/pic12.jpg">
-						<img src="image/pic12.jpg" alt="圖片描述">
-						</a>
-						<div class="desc">幕後花絮7</div>
-					</div>
-				</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-	<div class="our-partners">
-		<div class="container" id="pictureBook">
-			<h3>音樂繪本</h3>
-            <div >bbbbb
-            	<h1>等學長資料</h1>
+			<!-- 左右切換-->
+				<a class="carousel-control-prev" href="#carousel" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#carousel" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
 			</div>
+				<!-- 照片藝廊 -->
+				<div class="responsive">
+					<div class="img">
+						<a class= "slide-0">
+						<img src="image/pic0.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="img">
+						<a class= "slide-1">
+						<img src="image/pic1.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="img">
+						<a class= "slide-2">
+						<img src="image/pic2.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="img">
+						<a class= "slide-3">
+						<img src="image/pic3.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="img">
+						<a class= "slide-4">
+						<img src="image/pic4.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="img">
+						<a class= "slide-5">
+						<img src="image/pic5.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="img">
+						<a class= "slide-6">
+						<img src="image/pic6.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="img">
+						<a class= "slide-7">
+						<img src="image/pic7.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="img">
+						<a class= "slide-8">
+						<img src="image/pic8.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="responsive">
+					<div class="img">
+						<a class= "slide-9">
+						<img src="image/pic9.jpg">
+						</a>
+					</div>
+				</div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
-	<div class="our-partners">
-		<div class="container" id="movieNovel">
-			<h3>電影小說</h3>
-            <div>ccccc
-            	<h1>等老師資料</h1>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-
 </body>
 </html>
