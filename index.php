@@ -12,6 +12,7 @@
 		.our-partners{
 			display: block;
 			clear: both;
+			margin: 1%;
 		}
 		h3,h4{
 			text-align:center;
@@ -46,14 +47,28 @@
 			width: 100%;
 			height: auto;
 		}
-		div.desc {
-			padding: 15px;
-			text-align: center;
+		img.img{
+			width: 100%;
+			height: auto;
 		}
 		div.title_line{
-					display: block;
-					padding: 2%;
+			height:20%;
+			display: block;
+			padding: 2%;
+			position: relative;
+			margin: 25px;
 		}
+		img.logo{
+			height:20%;
+			width: 20%;
+		}
+		@media (max-width:360px) {
+			img.logo {
+			display: none;
+			}
+		}
+
+
 	</style>
 	<title>科學少女xxxxxxxxxxxxxxx</title>
 	<!-- - -->
@@ -108,7 +123,7 @@
 				<div class="container-fluid">
 					<div class="navbar-brand">
 						<a href="http://localhost/science_teenage_girl/index.php">
-						<img src="logo.png" alt="go to index" width="60" height="55">
+						<img src="logo.png" alt="go to index" class="logo">
 						</a>
 					</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -215,18 +230,6 @@
 			<h3>精彩劇照</h3>           
 			<div id="carousel" class="carousel slide" data-ride="carousel">
 			<!-- 照片數 -->
-				<ul class="carousel-indicators">
-					<li data-target="#carousel" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel" data-slide-to="1"></li>
-					<li data-target="#carousel" data-slide-to="2"></li>
-					<li data-target="#carousel" data-slide-to="3"></li>
-					<li data-target="#carousel" data-slide-to="4"></li>
-					<li data-target="#carousel" data-slide-to="5"></li>
-					<li data-target="#carousel" data-slide-to="6"></li>
-					<li data-target="#carousel" data-slide-to="7"></li>
-					<li data-target="#carousel" data-slide-to="8"></li>
-					<li data-target="#carousel" data-slide-to="9"></li>		
-				</ul>
 			<!-- 幻燈片 -->
 				<div class="carousel-inner">
 					<div class="carousel-item active">
